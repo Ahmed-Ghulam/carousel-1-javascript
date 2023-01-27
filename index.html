@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css">
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="slider-wrapper">
+        <div class="slider-items">
+            <img src="./img3.jfif" class="slider-item">
+            <img src="./img4.jfif" class="slider-item">
+            <img src="./img5.jfif" class="slider-item">
+        </div> <!-- slider-item -->
+        <div class="slider-controls">
+            <ion-icon onclick="arrowcontrol(-1)" class="prev" name="chevron-back-outline"></ion-icon>
+            <ion-icon onclick="arrowcontrol(1)" class="next" name="chevron-forward-outline"></ion-icon>
+        </div><!-- slider-controls -->
+        <div class="slider-indicators">
+            <span onclick="moveslideto(1)"></span>
+            <span onclick="moveslideto(2)"></span>
+            <span onclick="moveslideto(3)"></span>
+        </div><!-- slider-indicators -->
+        <div class="slider-content">
+            <h3>Sky View</h3>
+            <h3> mountain View</h3>
+            <h3>Ocean View</h3>
+        </div>
+    </div> <!-- slider-wrapper -->
+
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
